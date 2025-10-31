@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>小吃站 | 單頁網站</title>
+  <style>
+    body{margin:0;font-family:sans-serif;line-height:1.6}
+    header{padding:16px 20px;position:sticky;top:0;background:#fff;border-bottom:1px solid #eee}
+    nav a{margin-right:12px;text-decoration:none;color:#333}
+    .hero{padding:60px 20px;text-align:center;background:#f8f8f8}
+    .hero img{max-width:100%;height:auto;border-radius:12px}
+    section{padding:28px 20px;max-width:900px;margin:auto}
+    .card{border:1px solid #eee;border-radius:12px;padding:14px;margin:10px 0}
+    footer{padding:20px;text-align:center;color:#666;border-top:1px solid #eee}
+  </style>
+</head>
+<body>
+  <header>
+    <strong>小吃站</strong>
+    <nav>
+      <a href="#menu">菜單</a>
+      <a href="#about">關於</a>
+      <a href="#contact">聯絡</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>今天吃什麼？</h1>
+    <p>平價、好吃、快速上桌。</p>
+    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200" alt="招牌菜">
+  </div>
+
+  <section id="menu">
+    <h2>熱門菜單</h2>
+    <div class="card"><b>雞腿飯</b> — $90</div>
+    <div class="card"><b>牛肉麵</b> — $120</div>
+    <div class="card"><b>滷味拼盤</b> — $70</div>
+  </section>
+
+  <section id="about">
+    <h2>關於我們</h2>
+    <p>巷口老店，新鮮現做，每日限量。</p>
+  </section>
+
+  <section id="contact">
+    <h2>聯絡/訂餐</h2>
+    <p>電話：02-1234-5678　地址：台北市好吃路 1 號</p>
+  </section>
+
+  <footer>© <span id="y"></span> 小吃站</footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
